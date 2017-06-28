@@ -34,10 +34,10 @@ public class ControleDeEstoque {
         Funcionario f = new Funcionario();
         Fornecedor forne =  new Fornecedor();
         
-        f.setNome("Alan");
+//        f.setNome("Hugo");
 
-        forne.setNome("Antonio");
-        
+        forne.setNome("JBS so pra quem pode ");
+//        forne.setEndereco(null);
         
         ProdutoDAO pdao = new ProdutoDAO();
         Produto p = new Produto();
@@ -46,7 +46,7 @@ public class ControleDeEstoque {
 //            daof.salvar(f);
 //            fachada.salvarFuncionario(f);
 
-//              fachada.salvarFornecedor(forne);
+              fachada.salvarFornecedor(forne);
 
 //            List<Funcionario> lista =  fachada.getTodosFuncionarios();
 //            System.out.println(fachada.getUltimoFornecedores().getNome());
@@ -54,8 +54,8 @@ public class ControleDeEstoque {
 //                 System.out.println(fachada.getByIdFornecedor(1L).toString());
 //            }
            
-    p = pdao.getProdutoPorCodigoBarras(1000000001);
-            System.out.println("Nome "+p.getNomeProduto()+"Codigo de barras "+p.getCodigoDeBarras());
+//    p = pdao.getProdutoPorCodigoBarras(1000000001);
+//            System.out.println("Nome "+p.getNomeProduto()+"Codigo de barras "+p.getCodigoDeBarras());
 
         } catch (ExceptionDAO ex) {
             Logger.getLogger(ControleDeEstoque.class.getName()).log(Level.SEVERE, null, ex);

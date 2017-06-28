@@ -86,7 +86,7 @@ public class TelaBuscarProdutoPorCodigoDeBarras extends javax.swing.JDialog {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          try {
-           if(jTextFieldCodigoDeBarras.equals("")){
+           if(!jTextFieldCodigoDeBarras.equals("")){
                TelaSaídaProdutos telasaida = null;
                  telasaida.p = fachada.getProdutoPorCodigoBarras(Integer.parseInt(jTextFieldCodigoDeBarras.getText()));
             this.dispose();

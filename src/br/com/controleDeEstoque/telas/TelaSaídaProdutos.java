@@ -289,6 +289,8 @@ public class TelaSaídaProdutos extends javax.swing.JFrame {
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
       if(p !=null){
           jLabelCodigodeBarras.setText(p.getCodigoDeBarras().toString());
+          jTextFieldNomeProduto.setText(p.getNomeProduto());
+          jTextFieldQuantidade.setText(String.valueOf(p.getQuantidadeInicial()));
       }
     }//GEN-LAST:event_formWindowGainedFocus
 
